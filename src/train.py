@@ -3,18 +3,12 @@ from env_hiv import HIVPatient
 import torch
 import numpy as np
 import torch.nn as nn
-import random
-import matplotlib.pyplot as plt
 import os
-from sklearn.ensemble import HistGradientBoostingRegressor
-from sklearn.ensemble import ExtraTreesRegressor
 import xgboost as xgb
 from tqdm import tqdm
 import pickle
 
 from statistics import mean
-from interface import Agent
-import gymnasium as gym
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
